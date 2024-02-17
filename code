@@ -1,0 +1,25 @@
+int ACCX =A0;
+int ACCY=A1;
+int ACCZ=A2;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(ACCX,INPUT);
+  pinMode(ACCY,INPUT);
+  pinMode(ACCZ,INPUT);
+}
+
+void loop(){
+  
+  int sensorvalueX=analogRead(A0);
+  Serial.println(sensorvalueX);
+  
+ 
+  int sensorvalueY=analogRead(A1);
+  Serial.println(sensorvalueY);
+
+  
+   int sensorvalueZ=analogRead(A2);
+  Serial.println(sensorvalueZ);
+  
+  
